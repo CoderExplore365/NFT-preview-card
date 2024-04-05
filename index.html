@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; color:rgb(14, 133, 207);}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+.Equilibrium-image {
+  margin-top: 25px;
+  width: 255px;
+  border-radius: 20px;
+}
+
+.Equilibrium-image:hover {
+  background-image: url("images/icon-view.svg");
+}
+
+.Equilibrium {
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  text-align: left;
+  margin-left: 9px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 23px;
+  color: azure;
+}
+
+.Equilibrium:hover {
+    color:rgb(64, 177, 247);
+    cursor: pointer;
+  }
+
+.description {
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  text-align: left;
+  margin-left: 9px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:rgb(14, 133, 207);
+}
+
+.days {
+  padding: 10px 10px 10px 10px;
+}
+
+.creator {
+  font-size: small;
+  padding: 10px 10px 10px 10px;
+  margin-top: 10px;
+  color:rgb(64, 177, 247);
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: row;
+}
+ 
+.view {
+  margin-left: 5px;
+}
+
+.line {
+  border-bottom: 1px solid rgb(64, 177, 247);
+  border-left: 1px solid rgb(64, 177, 247);
+  margin: 0 20px;
+}
+
+.avatar {
+  width: 30px;
+  margin-left: 30px;
+  display: flex;
+  margin-right: 20px;
+  border-radius: 90px;
+  background-color: #fff;
+  padding: 1px;
+}
+
+#creation {
+  text-align: left;
+  margin-top: 8px;
+  font-size: medium;
+}
+
+strong {
+  color: white;
+}
+
+strong:hover {
+  color:rgb(64, 177, 247);
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+<img class="Equilibrium-image" src="image-equilibrium.jpg">
+  <div class="Equilibrium">
+  Equilibrium #3429
+</div>
+<div class="description">
+  Our Equilibrium collection promotes balance and calm.
+</div>
+
+<div class="days">
+<div id="ETH">
+  <img class="view" src="images/icon-ethereum.svg" style="border-left:1px solid #000000; padding-left:5px; margin-left:5px;">
+  <div id="view-word">
+  0.041 ETH
+</div>
+</div>
+<div id="days">
+  <img class="clock" src="images/icon-clock.svg">
+  3 days left
+</div>
+</div>
+<div class="line"></div>
+<div class="creator">
+  <img class="avatar" src="images/image-avatar.png">
+  <div id="creation">
+  Creation of <strong>Jules Wyvern</strong>
+</div>
+</div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
