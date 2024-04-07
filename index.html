@@ -21,13 +21,32 @@
   }
 
 .Equilibrium-image {
+  opacity: 1;
   margin-top: 25px;
-  width: 255px;
+  width: 270px;
   border-radius: 20px;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 
-.Equilibrium-image:hover {
-  background-image: url("images/icon-view.svg");
+.image-middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image-container:hover .Equilibrium-image {
+  opacity: 0.3;
+}
+
+.image-container:hover .image-middle {
+  opacity: 1;
 }
 
 .Equilibrium {
@@ -43,6 +62,10 @@
 .Equilibrium:hover {
     color:rgb(64, 177, 247);
     cursor: pointer;
+  }
+
+  .view-icon {
+    padding-bottom: 90px;
   }
 
 .description {
@@ -70,6 +93,14 @@
  
 .view {
   margin-left: 5px;
+}
+
+#view-word {
+  padding-left: 10px;
+}
+
+#clock-word {
+  padding-left: 5px;
 }
 
 .line {
@@ -107,7 +138,12 @@ strong:hover {
 <body>
 
   <div class="container">
+    <div class="image-container">
 <img class="Equilibrium-image" src="image-equilibrium.jpg">
+<div class="image-middle">
+  <img class="view-icon" src="images/icon-view.svg">
+</div>
+</div>
   <div class="Equilibrium">
   Equilibrium #3429
 </div>
@@ -117,14 +153,16 @@ strong:hover {
 
 <div class="days">
 <div id="ETH">
-  <img class="view" src="images/icon-ethereum.svg" style="border-left:1px solid #000000; padding-left:5px; margin-left:5px;">
+  <img class="view" src="images/icon-ethereum.svg" style="padding-left:5px; margin-left:5px;">
   <div id="view-word">
   0.041 ETH
 </div>
 </div>
 <div id="days">
   <img class="clock" src="images/icon-clock.svg">
+  <div id="clock-word">
   3 days left
+</div>
 </div>
 </div>
 <div class="line"></div>
